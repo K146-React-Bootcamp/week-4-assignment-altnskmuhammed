@@ -14,10 +14,11 @@ function App() {
       <ThemeProvider>
         <TopNavbar />
         <Routes>
-          <Route path="*" element={<NotFound />} />
+          
           <Route path="/home" element={<HomePage />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/features" element={<Features />} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
